@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nafay Ur Rehman — Junior BI Analyst</title>
+<title>Nafay Ur Rehman — Junior BI Analyst - Data Analyst - Data Scientist</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
@@ -445,6 +445,8 @@
   .exp-achievements { margin-top:10px; display:flex; flex-direction:column; gap:4px; }
   .exp-achievement { font-size:13px; color:var(--subtle); display:flex; gap:8px; }
   .exp-achievement::before { content:'↗'; color:var(--green); flex-shrink:0; }
+  .exp-achievement.award::before { content:'🏆'; }
+  .exp-achievement.award { color:var(--text); font-weight:500; }
 
   #certifications { background:var(--bg2); }
   .cert-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
@@ -455,7 +457,10 @@
     transition: border-color 0.2s, transform 0.2s;
   }
   .cert-card:hover { border-color:rgba(37,99,235,0.3); transform:translateY(-2px); }
+  .cert-card.award { border-color:rgba(245,158,11,0.3); background:linear-gradient(135deg, rgba(245,158,11,0.06), var(--bg3)); }
+  .cert-card.award:hover { border-color:rgba(245,158,11,0.55); box-shadow:0 8px 24px rgba(245,158,11,0.08); }
   .cert-icon { width:36px; height:36px; border-radius:6px; background:rgba(37,99,235,0.15); border:1px solid rgba(37,99,235,0.25); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:16px; }
+  .cert-icon.award-icon { background:rgba(245,158,11,0.15); border-color:rgba(245,158,11,0.35); }
   .cert-name { font-size:14px; font-weight:500; color:#F1F5F9; margin-bottom:4px; }
   .cert-issuer { font-size:12px; color:var(--muted); }
   .cert-year { font-size:11px; color:var(--cyan); margin-top:4px; font-family:'JetBrains Mono',monospace; }
@@ -563,7 +568,7 @@
 <section class="hero">
   <div class="hero-layout">
     <div class="hero-inner">
-      <div class="role-badge">Open to BI and Data Analyst Roles</div>
+      <div class="role-badge">Open to BI, Data Analyst and Data Scientist Roles</div>
       <div class="hero-tag">Data Analytics &amp; Business Intelligence</div>
       <h1>Nafay Ur<br><span>Rehman</span></h1>
 
@@ -693,7 +698,7 @@
       <div class="about-highlights">
         <div class="highlight-card">
           <div class="label">Location</div>
-          <div class="value">Milan, Italy — Open to Remote</div>
+          <div class="value">Milan, Italy — Open to Hybrid</div>
         </div>
         <div class="highlight-card">
           <div class="label">Education</div>
@@ -769,6 +774,13 @@
           <span class="skill-tag">ETL Pipelines</span>
           <span class="skill-tag">Automation Scripts</span>
           <span class="skill-tag">Streamlit</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Random Forest</span>
+          <span class="skill-tag">Linear Regression</span>
+          <span class="skill-tag">Logistic Regression</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">KNN</span>
         </div>
       </div>
 
@@ -932,6 +944,7 @@
           <div class="exp-title">Data Analyst-II</div>
           <div class="exp-desc">Promoted to Data Analyst-II after demonstrating strong performance. Leading analytics delivery for strategic decision-making with Power BI dashboards adopted by leadership for quarterly business reviews.</div>
           <div class="exp-achievements">
+            <div class="exp-achievement award">Star Performer of the Quarter — Q2 2026, One Click</div>
             <div class="exp-achievement">Reduced manual reporting effort by 30% through process automation</div>
             <div class="exp-achievement">Cut data processing time by 50% via optimized analytical models</div>
             <div class="exp-achievement">Dashboards built for management self-service minimal maintenance overhead</div>
@@ -1009,6 +1022,14 @@
     <div class="section-tag">Certifications</div>
     <h2 class="section-title">Credentials</h2>
     <div class="cert-grid reveal">
+      <div class="cert-card award">
+        <div class="cert-icon award-icon">🏆</div>
+        <div>
+          <div class="cert-name">Star Performer of the Quarter</div>
+          <div class="cert-issuer">One Click · Q2 2026</div>
+          <div class="cert-year">2026</div>
+        </div>
+      </div>
       <div class="cert-card">
         <div class="cert-icon">G</div>
         <div>
